@@ -1,27 +1,27 @@
 namespace: fleet-mc-manifest-example
 targetCustomizations:
-- name: dev
+- name: mgmt-rke2
   clusterSelector:
     matchLabels:
-      env: dev
+      env: mgmt-rke2
   yaml:
     overlays:
     # Refers to overlays/noreplication folder
     - noreplication
 
-- name: test
+- name: rke2-harv-cloud
   clusterSelector:
     matchLabels:
-      env: test
+      env: rke2-harv-cloud
   yaml:
     overlays:
     # Refers to overlays/scale3 folder
     - scale3
 
-- name: prod
+- name: rke2-rocky93
   clusterSelector:
     matchLabels:
-      env: prod
+      env: rke2-rocky93
   yaml:
     # Refers to overlays/servicelb, scale3 folders
     overlays:
