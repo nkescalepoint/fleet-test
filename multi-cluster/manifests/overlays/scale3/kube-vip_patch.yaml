@@ -1,0 +1,7 @@
+spec:
+     containers:
+      - args:
+        - manager
+        env:
+        - name: address
+          value: 10.22.139.5 
