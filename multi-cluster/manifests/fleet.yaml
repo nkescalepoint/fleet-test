@@ -1,27 +1,27 @@
 namespace: fleet-mc-manifest-example
 targetCustomizations:
-- name: dev
+- name: dever
   clusterSelector:
     matchLabels:
-      env: dev
+      env: dever
   yaml:
     overlays:
     # Refers to overlays/noreplication folder
     - noreplication
 
-- name: test
+- name: tester
   clusterSelector:
     matchLabels:
-      env: test
+      env: tester
   yaml:
     overlays:
     # Refers to overlays/scale3 folder
     - scale3
 
-- name: prod
+- name: proder
   clusterSelector:
     matchLabels:
-      env: prod 
+      env: proder 
   yaml:
     # Refers to overlays/servicelb, scale3 folders
     overlays:
