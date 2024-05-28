@@ -1,4 +1,5 @@
 #namespace: fleet-manifest-test
+defaultNamespace: default
 targetCustomizations:
 
 - name: dever
