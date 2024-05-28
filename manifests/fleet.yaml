@@ -1,4 +1,4 @@
-namespace: fleet-manifest-test
+#namespace: fleet-manifest-test
 targetCustomizations:
 
 - name: dever
